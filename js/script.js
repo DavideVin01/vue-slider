@@ -28,4 +28,9 @@ const root = new Vue({
             'images/image4.jpg',
         ],
     },
+    methods: {
+        isActive(index){
+            return index === this.currentIndex;
+        }
+    }
 });
