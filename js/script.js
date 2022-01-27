@@ -41,5 +41,9 @@ const root = new Vue({
             //To add validation
             this.currentIndex--;
         },
+        movePic(index){
+            this.currentIndex = index;
+        }
+
     }
 });
