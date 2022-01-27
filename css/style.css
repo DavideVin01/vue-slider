@@ -32,8 +32,9 @@
   }
 
   img {
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-name: fadeIn;
+    box-shadow: 0px 30px 50px 10px rgb(161, 161, 161);
   }
   
   @keyframes fadeIn {
@@ -43,4 +44,3 @@
     to {
         opacity: 1;
     }
-  }
