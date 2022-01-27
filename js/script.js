@@ -27,7 +27,7 @@ const root = new Vue({
             'images/image3.jpg',
             'images/image4.jpg',
         ],
-        activeClass: 'active',
+        active: 'active',
     },
     methods: {
         isActive(index){
