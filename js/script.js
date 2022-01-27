@@ -31,6 +31,9 @@ const root = new Vue({
     methods: {
         isActive(index){
             return index === this.currentIndex;
+        },
+        nextPic(){
+            this.currentIndex++;
         }
     }
 });
