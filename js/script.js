@@ -34,6 +34,9 @@ const root = new Vue({
         },
         nextPic(){
             this.currentIndex++;
-        }
+        },
+        prevPic(){
+            this.currentIndex--;
+        },
     }
 });
