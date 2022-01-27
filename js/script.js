@@ -27,15 +27,18 @@ const root = new Vue({
             'images/image3.jpg',
             'images/image4.jpg',
         ],
+        activeClass: 'active',
     },
     methods: {
         isActive(index){
             return index === this.currentIndex;
         },
         nextPic(){
+            //To add validation
             this.currentIndex++;
         },
         prevPic(){
+            //To add validation
             this.currentIndex--;
         },
     }
