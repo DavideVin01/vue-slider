@@ -34,16 +34,15 @@ const root = new Vue({
             return index === this.currentIndex;
         },
         nextPic(){
-            //To add validation
-            this.currentIndex++;
+            if (this.currentIndex === this.images.length - 1) this.currentIndex = 0;
+            else this.currentIndex++;
         },
         prevPic(){
-            //To add validation
-            this.currentIndex--;
+            if (this.currentIndex === 0) this.currentIndex = this.images.length - 1;
+            else this.currentIndex--;
         },
         movePic(index){
             this.currentIndex = index;
-        }
-
+        }     
     }
 });
