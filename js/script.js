@@ -1,5 +1,3 @@
-Vue.config.devtools = true;
-
 // Descrizione:
 // Partendo dal markup fornito in allegato, implementare la logica per far funzionare lo slider:
 // Deve essere possibile scorrere le immagini cliccando sulle freccette.
@@ -17,3 +15,17 @@ Vue.config.devtools = true;
 // 1- applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
 // 2- quando il mouse va in hover sulle freccette o sui pallini l'autoplay si interrompe
 // 3 - l'autoplay riparte quando il mouse lascia le freccette o i pallini
+Vue.config.devtools = true;
+
+const root = new Vue({
+    el: '#root',
+    data: {
+        currentIndex: 0,
+        images: [
+            'images/image1.jpg',
+            'images/image2.jpg',
+            'images/image3.jpg',
+            'images/image4.jpg',
+        ],
+    },
+});
